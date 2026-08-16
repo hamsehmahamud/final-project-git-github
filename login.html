@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mekov Tech Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">Mekov Tech Solution</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html" class="nav-btn active-nav">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="page-section">
+            <div class="container auth-container">
+                <h2>Welcome Back</h2>
+                <p>Sign in to access your enterprise dashboard.</p>
+
+                <form class="auth-form" action="#" method="POST" id="loginForm">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" name="email" class="form-control"
+                            placeholder="admin@mekovtech.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" class="form-control"
+                            placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="cta-button">Sign In</button>
+
+                    <div class="auth-links">
+                        <p>Don't have an account? <a href="register.html">Create one here</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mekov Tech Solution. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
