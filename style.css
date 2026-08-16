@@ -10,6 +10,9 @@ body {
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* --- Typography & Layout --- */
@@ -30,6 +33,11 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    color: #007bff;
+    font-weight: 700;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -47,6 +55,10 @@ body {
     color: #007bff;
 }
 
+.main-content {
+    flex: 1;
+}
+
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -61,17 +73,26 @@ body {
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #212529;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
 }
 
 .cta-button {
     margin-top: 1.5rem;
-    padding: 10px 25px;
+    padding: 12px 25px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -79,10 +100,120 @@ body {
     background-color: #0056b3;
 }
 
+/* --- General Page Sections (About & Contact) --- */
+.page-section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* --- About Us Styles --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.about-card h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.about-card p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+/* --- Contact Us Form Styles --- */
+.contact-container {
+    max-width: 600px;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* --- Footer --- */
 .footer {
     text-align: center;
     padding: 20px;
     background-color: #343a40;
     color: white;
-    margin-top: auto;
+    width: 100%;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
 }
